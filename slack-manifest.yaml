@@ -1,0 +1,27 @@
+display_information:
+  name: Cognee Dec0x
+  description: Ask and remember things via Cognee memory
+  background_color: "#3AA0FF"
+features:
+  bot_user:
+    display_name: cognee-dec0x
+    always_online: false
+  slash_commands:
+    - command: /cognee-ask-0x
+      url: https://04d5-2a02-3032-8d-bcf9-5d79-fc50-4cb4-e3a0.ngrok-free.app/api/v1/slack/commands
+      description: Ask Cognee's memory a question
+      usage_hint: "[question]"
+      should_escape: false
+    - command: /cognee-remember-0x
+      url: https://04d5-2a02-3032-8d-bcf9-5d79-fc50-4cb4-e3a0.ngrok-free.app/api/v1/slack/commands
+      description: Store a fact in Cognee's memory
+      usage_hint: "[fact]"
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - commands
+settings:
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
