@@ -5,6 +5,12 @@ Minimal Slack bot: `/cognee-remember <fact>` stores it in Cognee memory,
 workspace — no per-user account linking, no OAuth, no bot token needed since
 replies go back directly in the slash-command response.
 
+
+## Proof
+
+ ![proof.png](./proof.png)
+
+
 ## Run it
 
 ```bash
